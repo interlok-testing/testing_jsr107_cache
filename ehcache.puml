@@ -1,0 +1,13 @@
+```plantuml
+@startuml
+storage Interlok{
+usecase ehcache [
+ehcache
+]
+}
+
+Put -> Interlok
+Delete -> Interlok
+Interlok -> Get
+@enduml
+```

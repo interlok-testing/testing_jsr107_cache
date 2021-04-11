@@ -1,0 +1,182 @@
+<adapter>
+  <unique-id>interlok-jsr107-cache-testing</unique-id>
+  <start-up-event-imp>com.adaptris.core.event.StandardAdapterStartUpEvent</start-up-event-imp>
+  <heartbeat-event-imp>com.adaptris.core.HeartbeatEvent</heartbeat-event-imp>
+  <shared-components>
+    <connections/>
+    <services/>
+  </shared-components>
+  <event-handler class="default-event-handler">
+    <unique-id>DefaultEventHandler</unique-id>
+    <connection class="null-connection">
+      <unique-id>agitated-einstein</unique-id>
+    </connection>
+    <producer class="null-message-producer">
+      <unique-id>romantic-bartik</unique-id>
+    </producer>
+  </event-handler>
+  <message-error-handler class="null-processing-exception-handler">
+    <unique-id>silly-dijkstra</unique-id>
+  </message-error-handler>
+  <failed-message-retrier class="no-retries">
+    <unique-id>jolly-ptolemy</unique-id>
+  </failed-message-retrier>
+  <channel-list>
+    <channel>
+      <consume-connection class="jetty-embedded-connection">
+        <unique-id>affectionate-mcclintock</unique-id>
+      </consume-connection>
+      <produce-connection class="null-connection">
+        <unique-id>amazing-wiles</unique-id>
+      </produce-connection>
+      <workflow-list>
+        <standard-workflow>
+          <consumer class="jetty-message-consumer">
+            <unique-id>elastic-mirzakhani</unique-id>
+            <path>/input</path>
+            <methods>POST</methods>
+            <parameter-handler class="jetty-http-parameters-as-metadata"/>
+          </consumer>
+          <service-collection class="service-list">
+            <unique-id>naughty-lovelace</unique-id>
+            <services>
+              <add-single-value-to-cache>
+                <unique-id>focused-lumiere</unique-id>
+                  <connection class="cache-connection">
+                    <unique-id>cache-connection-basic1</unique-id>
+                    <cache-instance class="basic-jsr107-cache">
+                      <cache-name>ADAPTER_DEFAULT_CACHE</cache-name>
+                    </cache-instance>
+                  </connection>
+                <key>%message{key}</key>
+                <value-translator class="string-payload-cache-translator">
+                  <char-encoding>ISO-8859-1</char-encoding>
+                </value-translator>
+              </add-single-value-to-cache>
+              <jetty-response-service>
+                <unique-id>prickly-davinci</unique-id>
+                <http-status>200</http-status>
+                <content-type>text/plain</content-type>
+                <response-header-provider class="jetty-no-response-headers"/>
+              </jetty-response-service>
+            </services>
+          </service-collection>
+          <producer class="null-message-producer">
+            <unique-id>admiring-lamarr</unique-id>
+          </producer>
+          <produce-exception-handler class="null-produce-exception-handler"/>
+          <unique-id>nostalgic-murdock</unique-id>
+          <message-metrics-interceptor>
+            <unique-id>nostalgic-murdock-MessageMetrics</unique-id>
+            <timeslice-duration>
+              <unit>MINUTES</unit>
+              <interval>5</interval>
+            </timeslice-duration>
+            <timeslice-history-count>12</timeslice-history-count>
+          </message-metrics-interceptor>
+          <in-flight-workflow-interceptor>
+            <unique-id>nostalgic-murdock-InFlight</unique-id>
+          </in-flight-workflow-interceptor>
+        </standard-workflow>
+        <standard-workflow>
+          <consumer class="jetty-message-consumer">
+            <unique-id>affectionate-lalande</unique-id>
+            <path>/recall</path>
+            <methods>GET</methods>
+            <parameter-handler class="jetty-http-parameters-as-metadata"/>
+          </consumer>
+          <service-collection class="service-list">
+            <unique-id>goofy-poincare</unique-id>
+            <services>
+              <get-single-value-from-cache>
+                <unique-id>focused-lumiere</unique-id>
+                <connection class="cache-connection">
+                  <unique-id>cache-connection-basic2</unique-id>
+                  <cache-instance class="basic-jsr107-cache">
+                    <cache-name>ADAPTER_DEFAULT_CACHE</cache-name>
+                  </cache-instance>
+                </connection>
+                <key>%message{key}</key>
+                <value-translator class="string-payload-cache-translator">
+                  <char-encoding>ISO-8859-1</char-encoding>
+                </value-translator>
+              </get-single-value-from-cache>
+              <jetty-response-service>
+                <unique-id>peaceful-bohr</unique-id>
+                <http-status>200</http-status>
+                <content-type>text/plain</content-type>
+                <response-header-provider class="jetty-no-response-headers"/>
+              </jetty-response-service>
+            </services>
+          </service-collection>
+          <producer class="null-message-producer">
+            <unique-id>evil-euler</unique-id>
+          </producer>
+          <produce-exception-handler class="null-produce-exception-handler"/>
+          <unique-id>elated-wilson</unique-id>
+          <message-metrics-interceptor>
+            <unique-id>elated-wilson-MessageMetrics</unique-id>
+            <timeslice-duration>
+              <unit>MINUTES</unit>
+              <interval>5</interval>
+            </timeslice-duration>
+            <timeslice-history-count>12</timeslice-history-count>
+          </message-metrics-interceptor>
+          <in-flight-workflow-interceptor>
+            <unique-id>elated-wilson-InFlight</unique-id>
+          </in-flight-workflow-interceptor>
+        </standard-workflow>
+        <standard-workflow>
+          <consumer class="jetty-message-consumer">
+            <unique-id>stoic-haibt</unique-id>
+            <path>/remove</path>
+            <methods>GET</methods>
+            <parameter-handler class="jetty-http-parameters-as-metadata"/>
+          </consumer>
+          <service-collection class="service-list">
+            <unique-id>eager-liskov</unique-id>
+            <services>
+              <remove-key-from-cache>
+                <unique-id>tiny-lovelace</unique-id>
+                <connection class="cache-connection">
+                  <unique-id>cache-connection-basic2</unique-id>
+                  <cache-instance class="basic-jsr107-cache">
+                    <cache-name>ADAPTER_DEFAULT_CACHE</cache-name>
+                  </cache-instance>
+                </connection>
+                <key>%message{key}</key>
+              </remove-key-from-cache>
+              <jetty-response-service>
+                <unique-id>awesome-edison</unique-id>
+                <http-status>200</http-status>
+                <content-type>text/plain</content-type>
+                <response-header-provider class="jetty-no-response-headers"/>
+              </jetty-response-service>
+            </services>
+          </service-collection>
+          <producer class="null-message-producer">
+            <unique-id>stupefied-albattani</unique-id>
+          </producer>
+          <produce-exception-handler class="null-produce-exception-handler"/>
+          <unique-id>amazing-montalcini</unique-id>
+          <message-metrics-interceptor>
+            <unique-id>amazing-montalcini-MessageMetrics</unique-id>
+            <timeslice-duration>
+              <unit>MINUTES</unit>
+              <interval>5</interval>
+            </timeslice-duration>
+            <timeslice-history-count>12</timeslice-history-count>
+          </message-metrics-interceptor>
+          <in-flight-workflow-interceptor>
+            <unique-id>amazing-montalcini-InFlight</unique-id>
+          </in-flight-workflow-interceptor>
+        </standard-workflow>
+      </workflow-list>
+      <unique-id>suspicious-bartik</unique-id>
+    </channel>
+  </channel-list>
+  <message-error-digester class="standard-message-error-digester">
+    <unique-id>ErrorDigest</unique-id>
+    <digest-max-size>100</digest-max-size>
+  </message-error-digester>
+</adapter>

@@ -1,0 +1,17 @@
+{
+  "name" : "jsr107-cache-testing",
+  "variableSets" : {
+    "default" : { }
+  },
+  "variableXpaths" : { },
+  "uidInXincludeCompntListFileName" : false,
+  "xincludeXpaths" : { },
+  "additionalFiles" : {
+    "jetty.xml" : "jetty.xml",
+    "webdefault.xml" : "webdefault.xml",
+    "bootstrap.properties" : "bootstrap.properties",
+    "log4j2.xml" : "log4j2.xml"
+  },
+  "optionalComponentsInUse" : [ "com.adaptris:interlok-jsr107-cache:4.0-SNAPSHOT" ],
+  "structured" : true
+}
