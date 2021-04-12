@@ -21,4 +21,6 @@ dependencies {
   interlokRuntime ("com.adaptris:interlok-jsr107-cache:$interlokVersion") { changing=true }
 
   interlokJavadocs group: "com.adaptris", name: "interlok-jsr107-cache", version: "$interlokVersion", classifier: "javadoc", changing: true, transitive: false
+  
+  interlokRuntime ("org.jsr107.ri:cache-ri-impl:1.1.1")
 }
