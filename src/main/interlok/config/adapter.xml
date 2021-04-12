@@ -42,12 +42,12 @@
             <services>
               <add-single-value-to-cache>
                 <unique-id>focused-lumiere</unique-id>
-                  <connection class="cache-connection">
-                    <unique-id>cache-connection-basic1</unique-id>
-                    <cache-instance class="basic-jsr107-cache">
-                      <cache-name>ADAPTER_DEFAULT_CACHE</cache-name>
-                    </cache-instance>
-                  </connection>
+                <connection class="cache-connection">
+                  <unique-id>cache-connection-basic1</unique-id>
+                  <cache-instance class="basic-jsr107-cache">
+                    <cache-name>ADAPTER_DEFAULT_CACHE</cache-name>
+                  </cache-instance>
+                </connection>
                 <key>%message{key}</key>
                 <value-translator class="string-payload-cache-translator">
                   <char-encoding>ISO-8859-1</char-encoding>
@@ -65,7 +65,7 @@
             <unique-id>admiring-lamarr</unique-id>
           </producer>
           <produce-exception-handler class="null-produce-exception-handler"/>
-          <unique-id>nostalgic-murdock</unique-id>
+          <unique-id>add-to-cache</unique-id>
           <message-metrics-interceptor>
             <unique-id>nostalgic-murdock-MessageMetrics</unique-id>
             <timeslice-duration>
@@ -113,7 +113,7 @@
             <unique-id>evil-euler</unique-id>
           </producer>
           <produce-exception-handler class="null-produce-exception-handler"/>
-          <unique-id>elated-wilson</unique-id>
+          <unique-id>get-from-cache</unique-id>
           <message-metrics-interceptor>
             <unique-id>elated-wilson-MessageMetrics</unique-id>
             <timeslice-duration>
@@ -158,7 +158,7 @@
             <unique-id>stupefied-albattani</unique-id>
           </producer>
           <produce-exception-handler class="null-produce-exception-handler"/>
-          <unique-id>amazing-montalcini</unique-id>
+          <unique-id>delete-from-cache</unique-id>
           <message-metrics-interceptor>
             <unique-id>amazing-montalcini-MessageMetrics</unique-id>
             <timeslice-duration>

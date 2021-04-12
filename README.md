@@ -26,3 +26,6 @@ Finally fire a POST/GET request against the following URL;
 * `./gradlew clean build`
 * `(cd ./build/distribution && java -jar lib/interlok-boot.jar)`
 
+## Note
+
+This config project uses [JCache Reference Implementation](https://github.com/jsr107/RI) as this is a simple example. This is not meant for production use. For that you could use one of the many open source and commercial implementations of JCache.
