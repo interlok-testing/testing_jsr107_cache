@@ -64,7 +64,6 @@
           <producer class="null-message-producer">
             <unique-id>admiring-lamarr</unique-id>
           </producer>
-          <produce-exception-handler class="null-produce-exception-handler"/>
           <unique-id>add-to-cache</unique-id>
           <message-metrics-interceptor>
             <unique-id>nostalgic-murdock-MessageMetrics</unique-id>
@@ -112,7 +111,6 @@
           <producer class="null-message-producer">
             <unique-id>evil-euler</unique-id>
           </producer>
-          <produce-exception-handler class="null-produce-exception-handler"/>
           <unique-id>get-from-cache</unique-id>
           <message-metrics-interceptor>
             <unique-id>elated-wilson-MessageMetrics</unique-id>
@@ -157,7 +155,6 @@
           <producer class="null-message-producer">
             <unique-id>stupefied-albattani</unique-id>
           </producer>
-          <produce-exception-handler class="null-produce-exception-handler"/>
           <unique-id>delete-from-cache</unique-id>
           <message-metrics-interceptor>
             <unique-id>amazing-montalcini-MessageMetrics</unique-id>

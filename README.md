@@ -1,7 +1,7 @@
 # EHCache Testing
 
-[![license](https://img.shields.io/github/license/interlok-testing/testing_jsr107-cache.svg)](https://github.com/interlok-testing/testing_jsr107-cache/blob/develop/LICENSE)
-[![Actions Status](https://github.com/interlok-testing/testing_jsr107-cache/actions/workflows/gradle-build.yml/badge.svg)](https://github.com/interlok-testing/testing_jsr107-cache/actions/workflows/gradle-build.yml)
+[![license](https://img.shields.io/github/license/interlok-testing/testing_jsr107_cache.svg)](https://github.com/interlok-testing/testing_jsr107_cache/blob/develop/LICENSE)
+[![Actions Status](https://github.com/interlok-testing/testing_jsr107_cache/actions/workflows/gradle-build.yml/badge.svg)](https://github.com/interlok-testing/testing_jsr107_cache/actions/workflows/gradle-build.yml)
 
 Project tests interlok-jsr107-cache features
 
